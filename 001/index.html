@@ -20,7 +20,10 @@
 
     <script>
       const container = document.querySelector('[data-js="container"]');
-      ReactDOM.render("React App", container);
+      const b = React.createElement("b", null, "React");
+      const span = React.createElement("span", null, 'Bootcamp ');
+      const h1 = React.createElement("h1", { "data-js": "title" }, span, b);
+      ReactDOM.render(h1, container);
     </script>
   </body>
 </html>
